@@ -1,0 +1,20 @@
+[
+  {
+    "post_id": 1,
+    "title": "First Blog Post",
+    "author": "Paul Niemczyk",
+    "body": "These student devs keep getting younger and smarter"
+  },
+  {
+    "post_id": 2,
+    "title": "First Blog Post",
+    "author": "Will Mashrick",
+    "body": "Old Macdonald had a farm."
+  },
+  {
+    "post_id": 3,
+    "title": "Travel Blog Part 1",
+    "author": "Will Mashrick",
+    "body": "We just arrived in Italy. Time for some wine and pizza!"
+  }
+]

@@ -1,13 +1,14 @@
 [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-c66648af7eb3fe8bc4f294546bfd86ef473780cde1dea487d3c4ff354943c9ae.svg)](https://classroom.github.com/online_ide?assignment_repo_id=10666951&assignment_repo_type=AssignmentRepo)
+
 # PROJECT: Blog Server
 
 In this project, you will create a backend of a blog application, utilizing Model View Controller architecture.
 
 # Technologies:
 
-* Node
-* Express
-* Dotenv
+- Node
+- Express
+- Dotenv
 
 # Stories
 
@@ -23,29 +24,30 @@ Create an `api` folder which will hold `blog.json` file. The file should contain
 
 ```json
 [
-    {
-        "post_id": 1,
-        "title": "First Blog Post",
-        "author": "Paul Niemczyk",
-        "body": "These student devs keep getting younger and smarter"
-    }
+  {
+    "post_id": 1,
+    "title": "First Blog Post",
+    "author": "Paul Niemczyk",
+    "body": "These student devs keep getting younger and smarter"
+  }
 ]
 ```
+
 Create a `controllers` folder which will store your `routes.js` file. This is where you will create all of your endpoints to handle full CRUD functionality.
 
 ## System Design
 
 You should have the following routes:
 
-- [ ] Endpoint that will display all comments from the database. In lieu of database, we use our `blog.json` file.
-- [ ] Endpoint that will display one comment from the database selected by its `post_id`
-- [ ] Endpoint that will allow us to create a new entry which will be appended to the `.json` file's outermost array.
-- [ ] Endpoint that will allow us to update an existing entry once a match has been found. The search should be done via a query parameter, whereas update information should be enclosed within the body.
+- [x] Endpoint that will display all comments from the database. In lieu of database, we use our `blog.json` file.
+- [x] Endpoint that will display one comment from the database selected by its `post_id`
+- [x] Endpoint that will allow us to create a new entry which will be appended to the `.json` file's outermost array.
+- [x] Endpoint that will allow us to update an existing entry once a match has been found. The search should be done via a query parameter, whereas update information should be enclosed within the body.
 - [ ] Endpoint that will allow us to delete an entry from our `.json` file. This should be done thru the utilization of the parameter.
 
 ## Logic
 
-At this point, we have not yet covered databases. This presents a challenge when we need to make modifications to our `.json` file. The file itself acts as a makeshift database. These changes can be accomplished quite effectively through the use of the `fs` dependency. 
+At this point, we have not yet covered databases. This presents a challenge when we need to make modifications to our `.json` file. The file itself acts as a makeshift database. These changes can be accomplished quite effectively through the use of the `fs` dependency.
 
 In order to accomplish this task, you will need to import your `fs` dependency into your controller.
 
